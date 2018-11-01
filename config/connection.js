@@ -10,7 +10,7 @@ else {
     port: 3306,
     user: "root",
     password: "Rashima@916",
-    database: "burger_db"
+    database: "burgers_db"
   });
 }
 

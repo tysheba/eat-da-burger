@@ -1,0 +1,16 @@
+<h1>Eat-Da-Burger</h1>
+
+<!-- Pass in data from server.js -->
+<ul>
+  {{#each burgers}}
+  	<li>
+  		<p><span class="label">ID:</span> {{this.id}}</p>
+      <p><span class="label">Burger Name:</span> {{this.burger_name}}</p>
+      <p><span class="label">Devoured:</span> {{this.devoured}}</p>
+
+      <button data-id="{{this.id}}" class="delburger">Delete</button>
+
+      <a href="/{{this.id}}">Update this quote</a>
+  	</li>
+  {{/each}}
+</ul>
