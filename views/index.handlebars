@@ -1,16 +1,21 @@
-<h1>Eat-Da-Burger</h1>
+<div class="container">
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container" style="text-align: center;">
+      <h1 class="display-4">Eat-Da-Burger</h1>
+      <form>
+        <div class="form-group">
+          <textarea class="form-control" style = "width: 30%;margin-left: 400px;" id="newBurger" rows="3"></textarea>
+        </div>
+      </form>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+      <p class="lead">Enter the Burger you want to eat, then click the submit button.</p>
+    </div>
+  </div>
 
-<!-- Pass in data from server.js -->
-<ul>
+  <!-- Pass in data from server.js -->
   {{#each burgers}}
-  	<li>
-  		<p><span class="label">ID:</span> {{this.id}}</p>
-      <p><span class="label">Burger Name:</span> {{this.burger_name}}</p>
-      <p><span class="label">Devoured:</span> {{this.devoured}}</p>
-
-      <button data-id="{{this.id}}" class="delburger">Delete</button>
-
-      <a href="/{{this.id}}">Update this quote</a>
-  	</li>
+  <p><span class="label"> {{this.id}}. {{this.burger_name}}
+      <button data-id="{{this.id}}" class="delburger">Devour it!</button></span></p>
   {{/each}}
-</ul>
+
+</div>
