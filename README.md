@@ -14,7 +14,7 @@ git clone https://github.com/tysheba/eat-da-burger.git
 
 Next, install the application dependencies.
 
-npm install express body-parser express-handlebars
+npm install express body-parser express-handlebars mysql
 
 Finally, run the node server locally.
 
