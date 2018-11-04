@@ -21,6 +21,7 @@ Finally, run the node server locally.
 node server.js
 
 Now, open the local application on port 8080 at the URL: http://localhost:3000/.
+<img src="public/assets/images/eat-da-burger.png">
 
 
 click below for a Demo
